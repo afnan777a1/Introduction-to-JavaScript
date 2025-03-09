@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <h1>Javascript Variables</h1>
+    <h3>Sum of two Numbers</h3>
+    <p id="sum"></p>
+
+    <h3>Subtraction of two Numbers</h3>
+    <p id="sub"></p>
+
+    <h3>Multiplication of two Numbers</h3>
+    <p id="mult"></p>
+
+    <h3>SDivition of two Numbers</h3>
+    <p id="div"></p>
+    <script>
+      document.getElementById("myH").innerHTML = "Introduction to Javascript";
+      document.getElementById("myP").innerHTML =
+        "This is the first time writing Javascript";
+
+      var x, y, sum, sub, mult, div;
+
+      x = 500;
+      y = 5000;
+      sum = x + y;
+      sub = x - y;
+      mult = x * y;
+      div = x / y;
+      document.getElementById("sum").innerHTML = `Baba ${sum} taka dao`;
+      document.getElementById("sub").innerHTML = `Baba ${sub} taka dao`;
+      document.getElementById("mult").innerHTML = `Baba ${mult} taka dao`;
+      document.getElementById("div").innerHTML = `Baba ${div} taka dao`;
+    </script>
+  </body>
+</html>
