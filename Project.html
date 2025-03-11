@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgba(248, 189, 250, 0.315)">
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+    <div
+      class="Sum"
+      style="color: rgb(139, 20, 150); text-align: left; margin-left: 10px"
+    >
+      <h3>Your 1st number is</h3>
+      <p id="myh3"></p>
+    </div>
+
+    <div
+      class="Sum"
+      style="color: rgb(139, 20, 150); text-align: left; margin-left: 10px"
+    >
+      <h3>Your 2nd number is</h3>
+      <p id="myh4"></p>
+    </div>
+
+    <div
+      style="
+        background-color: rgb(52, 58, 64);
+        width: 450;
+        margin-left: 350px;
+        text-align: center;
+      "
+    >
+      <legend>
+        <div
+          class="Sum"
+          style="color: rgb(186, 99, 226); text-align: left; margin-left: 10px"
+        >
+          <h3>Sum of two Numbers➕</h3>
+          <p id="sum"></p>
+        </div>
+        <br />
+        <hr />
+
+        <div
+          class="Sum"
+          style="color: rgb(186, 99, 226); text-align: left; margin-left: 10px"
+        >
+          <h3>Subtraction of two Numbers➖</h3>
+          <p id="sub"></p>
+        </div>
+        <br />
+        <hr />
+
+        <div
+          class="Sum"
+          style="color: rgb(186, 99, 226); text-align: left; margin-left: 10px"
+        >
+          <h3>Multiplication of two Numbers✖️</h3>
+          <p id="mult"></p>
+        </div>
+        <br />
+        <hr />
+
+        <div
+          class="Sum"
+          style="color: rgb(186, 99, 226); text-align: left; margin-left: 10px"
+        >
+          <h3>Divition of two Numbers➗</h3>
+          <p id="div"></p>
+        </div>
+        <br />
+      </legend>
+    </div>
+
+    <script>
+      document.getElementById("myH").innerHTML = "Simple Calculator";
+      document.getElementById("myP").innerHTML =
+        "It will help you in your Math Calculations (✖️➕➖➗)";
+
+      var x, y, sum, sub, mult, div, myh3, myh4;
+
+      x = 100;
+      y = 100;
+      myh4 = y + y - y;
+      myh3 = x + x - x;
+      sum = x + y;
+      sub = x - y;
+      mult = x * y;
+      div = x / y;
+      document.getElementById("myh4").innerHTML = `= ${myh4}`;
+      document.getElementById("myh3").innerHTML = `= ${myh3}`;
+      document.getElementById("sum").innerHTML = `= ${sum}$`;
+      document.getElementById("sub").innerHTML = `= ${sub}$`;
+      document.getElementById("mult").innerHTML = `= ${mult}$`;
+      document.getElementById("div").innerHTML = `= ${div}$`;
+    </script>
+  </body>
+</html>
